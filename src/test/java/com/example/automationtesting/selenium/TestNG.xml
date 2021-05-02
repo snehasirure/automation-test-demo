@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SauceLabs Test Suite">
+    <test name="automationtesting_firefox">
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="com.example.automationtesting.selenium.LoginTest"/>
+            <class name="com.example.automationtesting.selenium.InventoryTest"/>
+        </classes>
+    </test> <!-- automationtesting_firefox -->
+    <test name="automationtesting_chrome">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="com.example.automationtesting.selenium.LoginTest"/>
+            <class name="com.example.automationtesting.selenium.InventoryTest"/>
+        </classes>
+    </test> <!-- automationtesting_chrome -->
+    <test name="automationtesting_edge">
+        <parameter name="browser" value="edge" />
+        <classes>
+            <class name="com.example.automationtesting.selenium.LoginTest"/>
+            <class name="com.example.automationtesting.selenium.InventoryTest"/>
+        </classes>
+    </test> <!-- automationtesting_edge -->
+</suite> <!-- Default Suite -->
